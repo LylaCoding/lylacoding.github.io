@@ -1,77 +1,155 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My GitHub Projects</title>
   <style>
     body {
       font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif;
       margin: 0;
-      display: flex;
-      justify-content: center;
       background-color: #87ceeb; /* Sky blue background color */
       color: #fff; /* Light text color for contrast */
     }
-    
-    .container {
-      margin: 50px;
-      width: 50%; /* Adjust width to leave 25% of the screen on both sides */
-    }
-    
-    .project {
-      margin-bottom: 20px;
-      background-color: #48b4e0;
-      text-align: center; /* Center the content within the project div */
-    }
-    
-    .project h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-    
-    .project p {
-      font-size: 16px;
-    }
-    
-    h1 {
+
+    nav {
+      background-color: #f2f2f2;
+      padding: 10px;
       text-align: center;
     }
-    
-    .intro {
-      margin-bottom: 30px;
-      text-align: center; /* Center the content within the project div */
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
     }
-    
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      padding: 5px 10px;
+      color: #333;
+    }
+
+    nav ul li a:hover {
+      color: #000;
+      background-color: #ccc;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 20px;
+      padding: 20px;
+	padding-left: 175px;
+		padding-right: 175px;
+    }
+
+    .top-container {
+      padding-left: 350px;
+      padding-right: 350px;
+      padding-top: 50px;
+    }
+	      .top-container2 {
+      padding-left: 300px;
+      padding-right: 300px;
+      padding-top: 25px;
+    }
+
+    .white-box-container {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .box {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 5px;
+      color: #000;
+      text-align: center;
+    }
+
+    .larger-text {
+      font-size: 24px;
+    }
+
+    .smaller-text {
+      font-size: 16px;
+    }
+
+    .long-box {
+      grid-row: span 2;
+    }
+	  
+.countries-div{
+  height: 200px;
+  border: 0px solid black;
+  overflow: auto;
+}
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Lou's GitHub Projects</h1>
-          <div class=intro>Welcome to my website portfolio of my github projects. All the HTML and CSS code was written by me (the code is <a href="https://github.com/LouCodingStuff/loucodingstuff.github.io/blob/main/index.html"> here.</a>) so I can have the website look exactly how I want. I also have another personal website hosted on weebly if you would like learn a bit about me. <br> You can find that <a href="https://lou-diprose.weebly.com"> here. <br> </a>Below are all my github projects worth showing off:</div>
-    
-    <div class="project">
-      <h2>Website Subpage Scraper</h2>
-      <p>Website Subpage Scraper is a Python script designed to scrape all internal links on a webpage. The script is easy to run as in the case the required modules (requests and beautifulsoup4) are not already installed, the script will install them automatically.</p>
-      <a href="https://github.com/LouCodingStuff/Website-Subpage-Scraper">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=LouCodingStuff&repo=Website-Subpage-Scraper" alt="Readme Card" style="max-width: 100%;">
-      </a>
+  <nav>
+    <ul>
+      <li><a href="#">Homes</a></li>
+      <li><a href="#">Computer Science</a></li>
+      <li><a href="#">Photography</a></li>
+    </ul>
+  </nav>
+  <div class="top-container">
+    <div class="white-box-container">
+      <div class="box">
+        <h2>WELCOME TO MY WEBSITE</h2>
+        <p class="smaller-text">I've created this website to include lots of information about myself and what I'm interested in. I will also include other things like the projects I'm working on.</p>
+      </div>
     </div>
-    
-    <div class="project">
-      <h2>Youtube Video Downloader</h2>
-      <p>In this project, I created a simple Python script that allows you to download a video file and its thumbnail from a YouTube URL. It runs in the terminal and is fairly simple to use.</p>
-      <a href="https://github.com/LouCodingStuff/YoutubeDownloader">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=LouCodingStuff&repo=YoutubeDownloader" alt="Readme Card" style="max-width: 100%;">
-      </a>
-    </div>
+  </div>
+	  <div class="top-container2">
+    <div class="white-box-container">
+      <div class="box">
+        <h2>About Me</h2>
+        <p class="smaller-text">Hi, My name is Lou. 
 
-        <div class="project">
-      <h2>Random-Mushroom-Facts-Website</h2>
-      <p>This is just a simple website I made that shows facts about mushrooms because I think they are cool. The website can be found <a href="https://loucodingstuff.github.io/Random-Mushroom-Facts-Website/"> here.</a></p>
-      <a href="https://github.com/LouCodingStuff/Random-Mushroom-Facts-Website">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=LouCodingStuff&repo=Random-Mushroom-Facts-Website" alt="Readme Card" style="max-width: 100%;">
-      </a>
+Im passionate about a few things, I really like photography and computer science,  I also quite like the other types of science (mostly Physics and even more specific crystallography) but I don't get much time to do it. 
+
+Some interesting facts about me 
+I have lived in Qatar for 2 years, I moved in May 2021
+In my computer experience I have done a few projects, you can find some of them on my computer science page</p>
+      </div>
     </div>
-    
+  </div>
+  <div class="container">
+    <div class="white-box-container long-box">
+      <div class="box">
+        <h2>MY MUSIC (FAVOURITES PLAYLIST)</h2>
+        <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/playlist/3992664182" width="100%" height="660" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+      </div>
+    </div>
+    <div class="white-box-container">
+      <div class="box">
+        <h2>Bucket List</h2>
+        <p class="smaller-text">☒Make A Nice Website (This one lol) <br>
+☐Go Skydiving<br>
+☐​Get a Degree<br>
+☐Start a Business<br>
+☐Visit 100 Countries (see below for more details)<br>
+☐Go to Antarctica<br>
+☐Have a Net Worth Of 1 Million</p>
+      </div>
+    </div>
+	<div class="white-box-container">
+      <div class="box">
+        <h2>COUNTRIES IVE BEEN</h2>
+        <div class="countries-div"> 1. England <br>
+2. Wales<br>
+3. Scotland<br>
+4. France<br>
+5. Spain<br>
+6. Qatar</div>
+			  </div>
+	  </div>
   </div>
 </body>
 </html>
