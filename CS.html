@@ -12,7 +12,7 @@
     
     .container {
       margin: 50px auto; /* Updated */
-      max-width: 750px; /* Updated */
+      max-width: 800px; /* Updated */
       padding: 0 20px; /* Added */
     }
     
@@ -69,6 +69,44 @@
       color: #000;
       background-color: #ccc;
     }
+
+
+	      .top-container2 {
+      padding-left: 2%;
+      padding-right: 2%;
+      padding-top: 25px;
+    }
+
+    .white-box-container {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .box {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 5px;
+      color: #000;
+      text-align: center;
+    }
+
+    nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+
+.gptgrid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 20px;
+    }
+
+
   </style>
 </head>
 <body>
@@ -77,35 +115,74 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="CS.html">Computer Science</a></li>
         <li><a href="photography.html">Photography</a></li>
+        <li><a href="mushrooms.html">Mushrooms</a></li>
       </ul>
   </nav>
+  <div>
+    <br>
+  </div>
   <div class="container">
-    <h1>Lou's GitHub Projects</h1>
-          <div class="intro">Welcome to the  portfolio of my github projects. All the HTML and CSS code for this website itself was written by me (the code is <a href="https://github.com/LouCodingStuff/loucodingstuff.github.io/blob/main/index.html"> here.</a>) so I can have the website look exactly how I want. <a href="https://lou-diprose.weebly.com"><br> </a>Below are all my github projects worth showing off:</div>
-    
-    <div class="project">
-      <h2>Website Subpage Scraper</h2>
-      <p>Website Subpage Scraper is a Python script designed to scrape all internal links on a webpage. The script is easy to run as in the case the required modules (requests and beautifulsoup4) are not already installed, the script will install them automatically.</p>
-      <a href="https://github.com/LouCodingStuff/Website-Subpage-Scraper">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=LouCodingStuff&repo=Website-Subpage-Scraper" alt="Readme Card" style="max-width: 100%;">
-      </a>
-    </div>
-    
-    <div class="project">
-      <h2>Youtube Video Downloader</h2>
-      <p>In this project, I created a simple Python script that allows you to download a video file and its thumbnail from a YouTube URL. It runs in the terminal and is fairly simple to use.</p>
-      <a href="https://github.com/LouCodingStuff/YoutubeDownloader">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=LouCodingStuff&repo=YoutubeDownloader" alt="Readme Card" style="max-width: 100%;">
-      </a>
-    </div>
+          <div class="top-container2">
+            <div class="white-box-container">
+              <div class="box">
+                <h1>Lou's GitHub Projects</h1>
+                <div class="intro">Welcome to the  portfolio of my github projects. All the HTML and CSS code for this website itself was written by me (the code is <a href="https://github.com/LouCodingStuff/loucodingstuff.github.io/blob/main/index.html"> here.</a>) so I can have the website look exactly how I want. <a href="https://lou-diprose.weebly.com"><br> </a>Below are all my github projects worth showing off:</div>                <a href="https://github.com/LouCodingStuff/Website-Subpage-Scraper"></a>
+              </div>
+            </div>
+          </div>
 
-        <div class="project">
-      <h2>Random-Mushroom-Facts-Website</h2>
-      <p>This is just a simple website I made that shows facts about mushrooms because I think they are cool. The website can be found <a href="https://loucodingstuff.github.io/Random-Mushroom-Facts-Website/"> here.</a></p>
-      <a href="https://github.com/LouCodingStuff/Random-Mushroom-Facts-Website">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=LouCodingStuff&repo=Random-Mushroom-Facts-Website" alt="Readme Card" style="max-width: 100%;">
-      </a>
-    </div>
+
+          <div class="top-container2">
+            <div class="white-box-container">
+              <div class="box">
+                <h2>Website Subpage Scraper</h2>
+                <p>Website Subpage Scraper is a Python script designed to get all subpage links on a webpage. The script is easy to run as in the case the required modules (requests and beautifulsoup4) are not already installed, the script will install them automatically. <br>I'm not entirley sure how it fully works because I used a guide to make it and then modified it to have a GUI Version along with the terminal version.</p>
+                <a href="https://github.com/LouCodingStuff/Website-Subpage-Scraper">
+                  <img src="https://github-readme-stats.vercel.app/api/pin/?username=LouCodingStuff&repo=Website-Subpage-Scraper" alt="Readme Card" style="max-width: 100%;">
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="top-container2">
+            <div class="white-box-container">
+              <div class="box">
+                <h2>Youtube Video Downloader</h2>
+                <p>In this project, I created a simple Python script that allows you to download a video file and its thumbnail from a YouTube URL (This was made using the pytube package). It runs in the terminal and is fairly simple to use.</p>
+                <a href="https://github.com/LouCodingStuff/YoutubeDownloader">
+                  <img src="https://github-readme-stats.vercel.app/api/pin/?username=LouCodingStuff&repo=YoutubeDownloader" alt="Readme Card" style="max-width: 100%;">
+                </a>
+              </div>
+            </div>
+          </div>
+
+    
+          <div class="top-container2">
+            <div class="white-box-container">
+              <div class="box">
+                <h2>Random-Mushroom-Facts-Website</h2>
+                <p>This is just another page to this website that I made, the website used to be a standalone site but now its built into this main site, you can still view how the original code was written before I moved it to this site with the link below. I made it to shows facts about mushrooms because I think they are cool. </p>
+                <a href="https://github.com/LouCodingStuff/Random-Mushroom-Facts-Website">
+                  <img src="https://github-readme-stats.vercel.app/api/pin/?username=LouCodingStuff&repo=Random-Mushroom-Facts-Website" alt="Readme Card" style="max-width: 100%;">
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="top-container2">
+            <div class="white-box-container">
+              <div class="box">
+                <h2>GPT Projects</h2>
+                <p>These are just a set of prompts I made to use with ChatGPT (or any LLM) so make it speak the way that you want it too, just a bit of prompt engineerting but I used GitHub to distribute it and it got a few stars so I decided to add it to the bottom of this page.</p>
+                <div class="gptgrid">
+                  <a href="https://github.com/LouCodingStuff/FriendGPT"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=LouCodingStuff&repo=FriendGPT" alt="Readme Card" style="max-width: 100%;"> </a>
+                  <a href="https://github.com/LouCodingStuff/TeacherGPT"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=LouCodingStuff&repo=TeacherGPT" alt="Readme Card" style="max-width: 100%;"> </a>
+                </div>
+            </div>
+          </div>
+        </div>
     
   </div>
 </body>
