@@ -6,8 +6,8 @@
     body {
       font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif;
       margin: 0;
-      background-color: #87ceeb; /* Sky blue background color */
-      color: #fff; /* Light text color for contrast */
+      background-color: #87ceeb;
+      color: #fff;
     }
 
     nav {
@@ -15,6 +15,10 @@
       padding: 10px;
       text-align: center;
       font-size: 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 9999;
     }
 
     nav ul {
@@ -39,45 +43,20 @@
     }
 
     .container {
-      margin: 50px auto; /* Updated */
-      max-width: 1000; /* Added */
+      margin: 50px auto;
+      max-width: 1000;
     }
-
-    @media (max-width: 767px) {
-  /* Styles for mobile devices with a maximum width of 767px */
-  .container {
-    padding-left: 2%;
-      padding-right: 2%; /* Font size for mobile devices */
-  }
-}
 
     .top-container {
       padding-left: 15%;
       padding-right: 15%;
-      padding-top: 48px;
+      padding-top: 70px;
     }
 
-    @media (max-width: 767px) {
-  /* Styles for mobile devices with a maximum width of 767px */
-  .top-container {
-    padding-left: 2%;
-      padding-right: 2%; /* Font size for mobile devices */
-  }
-}
-
-	      .top-container2 {
+    .top-container2 {
       padding-left: 10%;
       padding-right: 10%;
-      padding-top: 25px;
     }
-
-    @media (max-width: 767px) {
-  /* Styles for mobile devices with a maximum width of 767px */
-  .top-container2 {
-    padding-left: 0%;
-      padding-right: 0%; /* Font size for mobile devices */
-  }
-}
 
     .white-box-container {
       background-color: rgba(255, 255, 255, 0.8);
@@ -93,48 +72,23 @@
       text-align: center;
     }
 
-    .larger-text {
-      font-size: 26px;
-    }
-
-    .smaller-text {
-      font-size: 20px;
-    }
-
-    .long-box {
-      grid-row: span 2;
-    }
-	  
-.countries-div{
-  height: 200px;
-  border: 0px solid black;
-  overflow: auto;
-  font-size: 20px;
-}
-
-.gallery {
-      column-count: 3; /* Set the number of columns */
-      column-gap: 10px; /* Adjust the spacing between columns */
+    .gallery {
+      column-count: 3;
+      column-gap: 10px;
     }
 
     .gallery-item {
-    display: inline-block;
-    margin-bottom: 10px; /* Adjust the spacing between photos */
-    border: 2px solid #000; /* Add a border to the gallery items */
-    padding: 5px; /* Adjust the padding within the border */
-  }
-  
-  .gallery-item img {
-    width: 100%;
-    height: auto;
-  }
+      display: inline-block;
+      margin-bottom: 10px;
+      border: 2px solid #000;
+      padding: 5px;
+    }
 
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 9999;
-}
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+    }
+    
   </style>
 </head>
 <body>
@@ -146,15 +100,12 @@ nav {
       <li><a href="mushrooms.html">Mushrooms</a></li>
     </ul>
   </nav>
-  <div>
-    <br>
-  </div>
+
   <div class="top-container">
     <div class="white-box-container">
       <div class="box">
         <h2>Photography</h2>
-        <p class="smaller-text">As previously mentioned on my website I quite like photography, therefore ive decided to show of some of the photos ive taken. All these photos taken by me over a long period of time, mainly the UK or Qatar.
-          I hope to add more in the future and continuously upload as I take more photos.</p>
+        <p class="smaller-text">As previously mentioned on my website I quite like photography, therefore I've decided to show off some of the photos I've taken. All these photos taken by me over a long period of time, mainly in the UK or Qatar. I hope to add more in the future and continuously upload as I take more photos.</p>
       </div>
     </div>
   </div>
@@ -165,51 +116,51 @@ nav {
         <div class="box">
           <div class="gallery">
             <div class="gallery-item">
-              <img src="background-aspire-stadium_orig.jpg" alt="Photo 1">
+              <img src="background-aspire-stadium_orig.jpg" alt="The Torch, Doha, Qatar. Taken from Umm Al Jamajim Street">
               <p>The Torch, Doha, Qatar. Taken from Umm Al Jamajim Street</p>
             </div>
             <div class="gallery-item">
-              <img src="img-8096.jpg" alt="Photo 2">
+              <img src="img-8096.jpg" alt="Liverpool Hope University, Liverpool, England. Taken from middle of uni grass area.">
               <p>Liverpool Hope University, Liverpool, England. Taken from middle of uni grass area.</p>
             </div>
             <div class="gallery-item">
-              <img src="background2_orig.jpg" alt="Photo 3">
+              <img src="background2_orig.jpg" alt="The Torch, Doha, Qatar. Taken from Villagio Mall Car Park.">
               <p>The Torch, Doha, Qatar. Taken from Villagio Mall Car Park.</p>
             </div>
             <div class="gallery-item">
-              <img src="img-8245_orig.jpg" alt="Photo 1">
+              <img src="img-8245_orig.jpg" alt="The The Torch, Doha, Qatar. Taken from aspire park.">
               <p>The The Torch, Doha, Qatar. Taken from aspire park.</p>
             </div>
             <div class="gallery-item">
-              <img src="img-8243_orig.jpg" alt="Photo 2">
+              <img src="img-8243_orig.jpg" alt="The Torch & Khalifa Stadium, Doha, Qatar. Taken from the stadium's car park.">
               <p>The Torch & Khalifa Stadium, Doha, Qatar. Taken from the stadium's car park.</p>
             </div>
             <div class="gallery-item">
-              <img src="img-8235_orig.jpg" alt="Photo 3">
+              <img src="img-8235_orig.jpg" alt="Aspire Park, Doha, Qatar. Taken in the park.">
               <p>Aspire Park, Doha, Qatar. Taken in the park.</p>
             </div>
             <div class="gallery-item">
-              <img src="img-8212_orig.jpg" alt="Photo 3">
+              <img src="img-8212_orig.jpg" alt="The Torch, Doha, Qatar. Taken in Villagio mall Car Park.">
               <p>The Torch, Doha, Qatar. Taken in Villagio mall Car Park.</p>
             </div>
             <div class="gallery-item">
-              <img src="img-8186_orig.jpg" alt="Photo 3">
-              <p>The Torch, Doha, Qatar. Taken from Aspire Park</p>
+              <img src="img-8186_orig.jpg" alt="The Torch, Doha, Qatar. Taken from Aspire Park.">
+              <p>The Torch, Doha, Qatar. Taken from Aspire Park.</p>
             </div>
             <div class="gallery-item">
-              <img src="img-8157_orig.jpg" alt="Photo 3">
+              <img src="img-8157_orig.jpg" alt="The Torch, Doha, Qatar. Taken from Aspire Park.">
               <p>Aspire Park, Doha, Qatar. Taken in the park.</p>
             </div>
             <div class="gallery-item">
-              <img src="img-8146_orig.jpg" alt="Photo 3">
+              <img src="img-8146_orig.jpg" alt="The Torch, Doha, Qatar. Taken from Aspire Park.">
               <p>Aspire Park, Doha, Qatar. Taken in the park.</p>
             </div>
             <div class="gallery-item">
-              <img src="img-7968_orig.jpg" alt="Photo 3">
+              <img src="img-7968_orig.jpg" alt="Al Ghaith Street, Doha, Qatar.">
               <p>Al Ghaith Street, Doha, Qatar.</p>
             </div>
             <div class="gallery-item">
-              <img src="img-7975_orig.jpg" alt="Photo 3">
+              <img src="img-7975_orig.jpg" alt="Al Ghaith Street, Doha, Qatar.">
               <p>Al Ghaith Street, Doha, Qatar.</p>
             </div>
           </div>
