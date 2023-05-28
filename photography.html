@@ -48,14 +48,30 @@
     }
 
     .top-container {
-      padding-left: 15%;
-      padding-right: 15%;
+      padding-left: 20%;
+      padding-right: 20%;
       padding-top: 70px;
     }
 
+    @media (max-width: 767px) {
+      /* Styles for mobile devices with a maximum width of 767px */
+      .top-container {
+        padding-left: 2%;
+        padding-right: 2%;
+      }
+    }
+
     .top-container2 {
-      padding-left: 10%;
-      padding-right: 10%;
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+
+    @media (max-width: 767px) {
+      /* Styles for mobile devices with a maximum width of 767px */
+      .top-container2 {
+        padding-left: 2%;
+        padding-right: 2%;
+      }
     }
 
     .white-box-container {
@@ -89,7 +105,40 @@
       height: auto;
     }
 
+    .enlargeable-photo {
+      cursor: pointer;
+    }
+
+    #photo-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      cursor: pointer;
+    }
+
+    #photo-modal img {
+      max-width: 80%;
+      max-height: 80%;
+    }
+
+    .smaller-text {
+      font-size: 20px;
+    }
+
+    h2 {
+      font-size: 32px;
+    }
+
   </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="enlarge-photo.js"></script>
 </head>
 <body>
   <nav>
@@ -115,54 +164,102 @@
       <div class="white-box-container">
         <div class="box">
           <div class="gallery">
+
             <div class="gallery-item">
-              <img src="photos/background-aspire-stadium_orig.jpg" alt="The Torch, Doha, Qatar. Taken from Umm Al Jamajim Street">
-              <p>The Torch, Doha, Qatar. Taken from Umm Al Jamajim Street</p>
-            </div>
-            <div class="gallery-item">
-              <img src="photos/img-8096.jpg" alt="Liverpool Hope University, Liverpool, England. Taken from middle of uni grass area.">
+              <img class="enlargeable-photo" src="photos/img-8096.jpg" alt="Liverpool Hope University, Liverpool, England. Taken from middle of uni grass area.">
               <p>Liverpool Hope University, Liverpool, England. Taken from middle of uni grass area.</p>
             </div>
+
             <div class="gallery-item">
-              <img src="photos/background2_orig.jpg" alt="The Torch, Doha, Qatar. Taken from Villagio Mall Car Park.">
+              <img class="enlargeable-photo" src="photos/background-aspire-stadium_orig.jpg" alt="The Torch, Doha, Qatar. Taken from Umm Al Jamajim Street">
+              <p>The Torch, Doha, Qatar. Taken from Umm Al Jamajim Street</p>
+            </div>
+
+            <div class="gallery-item">
+              <img class="enlargeable-photo" src="photos/background2_orig.jpg" alt="The Torch, Doha, Qatar. Taken from Villagio Mall Car Park.">
               <p>The Torch, Doha, Qatar. Taken from Villagio Mall Car Park.</p>
             </div>
+
             <div class="gallery-item">
-              <img src="photos/img-8245_orig.jpg" alt="The The Torch, Doha, Qatar. Taken from aspire park.">
+              <img class="enlargeable-photo" src="photos/img-8245_orig.jpg" alt="The The Torch, Doha, Qatar. Taken from aspire park.">
               <p>The The Torch, Doha, Qatar. Taken from aspire park.</p>
             </div>
+
             <div class="gallery-item">
-              <img src="photos/img-8243_orig.jpg" alt="The Torch & Khalifa Stadium, Doha, Qatar. Taken from the stadium's car park.">
+              <img class="enlargeable-photo" src="photos/img-8243_orig.jpg" alt="The Torch & Khalifa Stadium, Doha, Qatar. Taken from the stadium's car park.">
               <p>The Torch & Khalifa Stadium, Doha, Qatar. Taken from the stadium's car park.</p>
             </div>
+
             <div class="gallery-item">
-              <img src="photos/img-8235_orig.jpg" alt="Aspire Park, Doha, Qatar. Taken in the park.">
-              <p>Aspire Park, Doha, Qatar. Taken in the park.</p>
-            </div>
-            <div class="gallery-item">
-              <img src="photos/img-8212_orig.jpg" alt="The Torch, Doha, Qatar. Taken in Villagio mall Car Park.">
+              <img class="enlargeable-photo" src="photos/img-8212_orig.jpg" alt="The Torch, Doha, Qatar. Taken in Villagio mall Car Park.">
               <p>The Torch, Doha, Qatar. Taken in Villagio mall Car Park.</p>
             </div>
+            
             <div class="gallery-item">
-              <img src="photos/img-8186_orig.jpg" alt="The Torch, Doha, Qatar. Taken from Aspire Park.">
+              <img class="enlargeable-photo" src="photos/img-8186_orig.jpg" alt="The Torch, Doha, Qatar. Taken from Aspire Park.">
               <p>The Torch, Doha, Qatar. Taken from Aspire Park.</p>
             </div>
+
             <div class="gallery-item">
-              <img src="photos/img-8157_orig.jpg" alt="The Torch, Doha, Qatar. Taken from Aspire Park.">
+              <img class="enlargeable-photo" src="photos/img-8157_orig.jpg" alt="Aspire Park, Doha, Qatar. Taken in the park.">
               <p>Aspire Park, Doha, Qatar. Taken in the park.</p>
             </div>
+
             <div class="gallery-item">
-              <img src="photos/img-8146_orig.jpg" alt="The Torch, Doha, Qatar. Taken from Aspire Park.">
+              <img class="enlargeable-photo" src="photos/img-8146_orig.jpg" alt="Aspire Park, Doha, Qatar. Taken in the park.">
               <p>Aspire Park, Doha, Qatar. Taken in the park.</p>
             </div>
+
             <div class="gallery-item">
-              <img src="photos/img-7968_orig.jpg" alt="Al Ghaith Street, Doha, Qatar.">
+              <img class="enlargeable-photo" src="photos/img-7968_orig.jpg" alt="Al Ghaith Street, Doha, Qatar.">
               <p>Al Ghaith Street, Doha, Qatar.</p>
             </div>
+
             <div class="gallery-item">
-              <img src="photos/img-7975_orig.jpg" alt="Al Ghaith Street, Doha, Qatar.">
+              <img class="enlargeable-photo" src="photos/img-7975_orig.jpg" alt="Al Ghaith Street, Doha, Qatar.">
               <p>Al Ghaith Street, Doha, Qatar.</p>
             </div>
+
+            <div class="gallery-item">
+              <img class="enlargeable-photo" src="photos/IMG_2518.jpg" alt="The Burj Khalifa, Dubai, UAE. Taken From The Burj Club Restraunt">
+              <p>The Burj Khalifa, Dubai, UAE. Taken From The Burj Club Restraunt</p>
+            </div>
+
+            <div class="gallery-item">
+              <img class="enlargeable-photo" src="photos/IMG_2414.JPG" alt="The Burj Khalifa, Dubai, UAE. Taken From A Restraunt In Dubai Mall">
+              <p>The Burj Khalifa, Dubai, UAE. Taken From A Restraunt In Dubai Mall</p>
+            </div>
+
+            <div class="gallery-item">
+              <img class="enlargeable-photo" src="photos/IMG_2490.JPG" alt="Red Rum Mocktail, Dubai, UAE. Taken From The Burj Club Restraunt">
+              <p>Red Rum Mocktail, Dubai, UAE. Taken From The Burj Club Restraunt</p>
+            </div>
+
+            <div class="gallery-item">
+              <img class="enlargeable-photo" src="photos/IMG_2684.jpg" alt="Crow with beak deformity, Dubai, UAE. Taken from Dubai Old Souk Marine Transport Station">
+              <p>Crow with beak deformity, Dubai, UAE. Taken from Dubai Old Souk Marine Transport Station</p>
+            </div>
+
+            <div class="gallery-item">
+              <img class="enlargeable-photo" src="photos/IMG_2625.JPG" alt="An Abra (A type of boat) on the water, Dubai, UAE. Taken from Dubai Creek" >
+              <p>An Abra (A type of boat) on the water, Dubai, UAE. Taken from Dubai Creek</p>
+            </div>
+
+            <div class="gallery-item">
+              <img class="enlargeable-photo" src="photos/IMG_2576.JPG" alt="Old Blue Boats, Dubai, UAE. Taken near Dubai Spice Souk" >
+              <p>Old Blue Boats, Dubai, UAE. Taken from Dubai Creek</p>
+            </div>
+
+            <div class="gallery-item">
+              <img class="enlargeable-photo" src="photos/IMG_2570.JPG" alt="Old Blue Boat, Dubai, UAE. Taken from Dubai Creek" >
+              <p>Old Blue Boat, Dubai, UAE. Taken from Dubai Creek</p>
+            </div>
+
+            <div class="gallery-item">
+              <img class="enlargeable-photo" src="photos/IMG_2556.JPG" alt="Store Front, Dubai, UAE. Taken from Utensil souq" >
+              <p>Store Front, Dubai, UAE. Taken from Utensil souq</p>
+            </div>
+
           </div>
         </div>
       </div>
