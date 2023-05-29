@@ -59,6 +59,13 @@
       font-size: 25px;
     }
 
+    @media (max-aspect-ratio: 16/9) {
+      /* Styles for mobile devices with a maximum width of 767px */
+      .container3 {
+      grid-template-columns: repeat(1, 2fr);
+      }
+    }
+
     .container4 {
       text-align: center;
       padding-top: 20px;
@@ -215,35 +222,37 @@
     <div class="white-box-container">
       <div class="box">
         <h2>Academics</h2>
-        <div class="container3" >
-          <h2 class="smaller-text"> IB Courses Program (Finish May 2023)</h2>
-
-          <h2 class="smaller-text"> GCSE (Finish May 2021)</h2>
-
-          <h2 class="smaller-text"> Online Courses</h2>
-
-          <ul>
-            <li>SEHS HL</li>
-            <li>English Lang. & Lit. SL</li>
-            <li>Maths AI SL</li>
-            <li>Business Management SL</li>
-            <li>French AB Initio SL</li>
-          </ul>
-
-          <ul>
-            <li>Photography Grade 6</li>
-            <li>English Literature Grade 6</li>
-            <li>Maths Grade 5</li>
-            <li>Engineering BTEC Level 2 pass</li>
-            <li>English Language Grade 4</li>
-            <li>Combined Science Grade 4</li>
-            <li>Geography Grade 3</li>
-          </ul>
-
-          <ul>
-            <li>How To Build A Computer <a href="https://alison.com/course/how-to-build-your-own-computer" > Alison</li>
-          </ul>
-
+        <div class="container3">
+          <div>
+            <h2 class="smaller-text">IB Courses Program (Finish May 2023)</h2>
+            <ul>
+              <li>SEHS HL</li>
+              <li>English Lang. & Lit. SL</li>
+              <li>Maths AI SL</li>
+              <li>Business Management SL</li>
+              <li>French AB Initio SL</li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="smaller-text">GCSE (Finish May 2021)</h2>
+            <ul>
+              <li>Photography Grade 6</li>
+              <li>English Literature Grade 6</li>
+              <li>Maths Grade 5</li>
+              <li>Engineering BTEC Level 2 pass</li>
+              <li>English Language Grade 4</li>
+              <li>Combined Science Grade 4</li>
+              <li>Geography Grade 3</li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="smaller-text">Online Courses (Completed Final Assessment and passed)</h2>
+            <ul>
+              <li>How To Build A Computer on <a href="https://alison.com/course/how-to-build-your-own-computer">Alison</a> with a 90% score</li>
+              <li>HTML5 Game Development - Lessons and Development Planning on <a href="https://alison.com/course/html5-game-development-lessons-and-development-planning-revised">Alison</a> with an 85% score</li>
+              <li>Introduction to Computer Hardware and Software on <a href="https://alison.com/course/introduction-to-computer-hardware-and-software">Alison</a> with an 88% score</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
