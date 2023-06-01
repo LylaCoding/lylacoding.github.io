@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <style>
+
+  <head>
+    <style>
     body {
       font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif;
       margin: 0;
-      background-color: #87ceeb; /* Sky blue background color */
-      color: #fff; /* Light text color for contrast */
+      background-color: #87ceeb;
+      /* Sky blue background color */
+      color: #fff;
+      /* Light text color for contrast */
     }
 
     nav {
@@ -21,6 +24,7 @@
     }
 
     @media (max-aspect-ratio: 16/9) {
+
       /* Styles for mobile devices with a maximum width of 767px */
       nav {
         font-size: 27px;
@@ -50,7 +54,7 @@
 
     .container3 {
       display: grid;
-      grid-template-columns: repeat(3, 2fr);
+      grid-template-columns: repeat(2, 2fr);
       grid-template-rows: auto;
       grid-gap: 20px;
       padding-top: 20px;
@@ -59,12 +63,51 @@
       font-size: 25px;
     }
 
-    @media (max-aspect-ratio: 9/16) {
+    @media (max-aspect-ratio: 16/9) {
+
       /* Styles for mobile devices with a maximum width of 767px */
       .container3 {
-      grid-template-columns: repeat(1, 2fr);
-	  
-      } 
+        grid-template-columns: repeat(1, 2fr);
+
+      }
+    }
+
+    .coursescontainer3 {
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      grid-template-rows: auto;
+      grid-gap: 0px;
+      padding-left: 2%;
+      padding-right: 2%;
+      font-size: 25px;
+    }
+
+    @media (max-aspect-ratio: 16/9) {
+
+      /* Styles for mobile devices with a maximum width of 767px */
+      .coursescontainer3 {
+        grid-template-columns: repeat(1, 2fr);
+
+      }
+    }
+
+
+    .coursescontainer3 ul {}
+
+    @media (max-aspect-ratio: 16/9) {
+
+      /* Styles for mobile devices with a maximum width of 767px */
+      .coursescontainer3 ul {
+        margin-bottom: 0px;
+        margin-top: 0px;
+
+      }
+    }
+
+
+    .newcontainer3 {
+      padding: 0% 2% 0% 2%;
+      font-size: 25px;
     }
 
     .container4 {
@@ -86,6 +129,7 @@
     }
 
     @media (max-aspect-ratio: 16/9) {
+
       /* Styles for mobile devices with a maximum width of 767px */
       .container {
         padding-left: 2%;
@@ -100,6 +144,7 @@
     }
 
     @media (max-aspect-ratio: 16/9) {
+
       /* Styles for mobile devices with a maximum width of 767px */
       .top-container {
         padding-left: 2%;
@@ -114,6 +159,7 @@
     }
 
     @media (max-aspect-ratio: 16/9) {
+
       /* Styles for mobile devices with a maximum width of 767px */
       .top-container2 {
         padding-left: 2%;
@@ -128,6 +174,7 @@
     }
 
     @media (max-aspect-ratio: 16/9) {
+
       /* Styles for mobile devices with a maximum width of 767px */
       .top-container3 {
         padding-left: 2%;
@@ -185,114 +232,138 @@
       text-align: left;
     }
   </style>
-</head>
-<body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="CS.html">Computer Science</a></li>
-      <li><a href="photography.html">Photography</a></li>
-      <li><a href="mushrooms.html">Mushrooms</a></li>
-    </ul>
-  </nav>
-  <div>
-    <br>
-  </div>
-  <div class="top-container">
-    <div class="white-box-container">
-      <div class="box">
-        <h2>WELCOME TO MY WEBSITE</h2>
-        <p class="smaller-text">I've created this website to include lots of information about myself and what I'm interested in. I will also include other things like the projects I'm working on.</p>
-      </div>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="CS.html">Computer Science</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="mushrooms.html">Mushrooms</a></li>
+      </ul>
+    </nav>
+    <div>
+      <br>
     </div>
-  </div>
-
-  <div class="top-container2">
-    <div class="white-box-container">
-      <div class="box">
-        <h2>About Me</h2>
-        <p class="smaller-text">Hi, My name is Lou.
-
-        I'm passionate about a few things, I really like photography and computer science. I also quite like the other types of science (mostly Quantum Physics and even a little bit of crystallography) but I don't get much time to do it. <br>
-        In my computer experience, I have done a few projects, you can find some of them on my computer science page.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="top-container3">
-    <div class="white-box-container">
-      <div class="box">
-        <h2>Academics</h2>
-        <div class="container3">
-          <div>
-            <h2 class="smaller-text">IB Courses Program (Finish May 2023)</h2>
-            <ul>
-              <li>SEHS HL</li>
-              <li>English Lang. & Lit. SL</li>
-              <li>Maths AI SL</li>
-              <li>Business Management SL</li>
-              <li>French AB Initio SL</li>
-            </ul>
-          </div>
-          <div>
-            <h2 class="smaller-text">GCSE (Finish May 2021)</h2>
-            <ul>
-              <li>Photography Grade 6</li>
-              <li>English Literature Grade 6</li>
-              <li>Maths Grade 5</li>
-              <li>Engineering BTEC Level 2 pass</li>
-              <li>English Language Grade 4</li>
-              <li>Combined Science Grade 4</li>
-              <li>Geography Grade 3</li>
-            </ul>
-          </div>
-          <div>
-            <h2 class="smaller-text">Online Courses (Completed Final Assessment and passed)</h2>
-            <ul>
-              <li>How To Build A Computer on <a href="https://alison.com/course/how-to-build-your-own-computer">Alison</a> with a 90% score</li>
-              <li>HTML5 Game Development - Lessons and Development Planning on <a href="https://alison.com/course/html5-game-development-lessons-and-development-planning-revised">Alison</a> with an 85% score</li>
-              <li>Introduction to Computer Hardware and Software on <a href="https://alison.com/course/introduction-to-computer-hardware-and-software">Alison</a> with an 88% score</li>
-            </ul>
-          </div>
+    <div class="top-container">
+      <div class="white-box-container">
+        <div class="box">
+          <h2>WELCOME TO MY WEBSITE</h2>
+          <p class="smaller-text">I've created this website to include lots of
+            information about myself and what I'm interested in. I will also
+            include other things like the projects I'm working on.</p>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="container">
-    <div class="white-box-container long-box">
-      <div class="box">
-        <h2>MY MUSIC (FAVOURITES PLAYLIST)</h2>
-        <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/playlist/3992664182" width="100%" height="700" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
-      </div>
-    </div>
-    <div class="white-box-container">
-      <div class="box">
-        <h2>Bucket List</h2>
-        <p style="font-size: 25px;">
-          ☒ Go Skydiving (Completed 26th May 2023)<br>
-          ☐ Get a Degree<br>
-          ☐ Start a Business<br>
-          ☐ Visit 100 Countries (Listed Below)<br>
-          ☐ Go to Antarctica<br>
-          ☐ Have a Net Worth Of 1 Million
-        </p>
-      </div>
-    </div>
-    <div class="white-box-container">
-      <div class="box">
-        <h2>COUNTRIES I'VE BEEN</h2>
-        <div class="countries-div">
-          1. England <br>
-          2. Wales<br>
-          3. Scotland<br>
-          4. France<br>
-          5. Spain<br>
-          6. Qatar<br>
-          7. United Arab Emirates
+    <div class="top-container2">
+      <div class="white-box-container">
+        <div class="box">
+          <h2>About Me</h2>
+          <p class="smaller-text">Hi, My name is Lou.
+
+            I'm passionate about a few things, I really like photography and
+            computer science. I also quite like the other types of science
+            (mostly Quantum Physics and even a little bit of crystallography)
+            but I don't get much time to do it. <br>
+            In my computer experience, I have done a few projects, you can find
+            some of them on my computer science page.</p>
         </div>
       </div>
     </div>
-  </div>
-</body>
-</html>
+
+    <div class="top-container3">
+      <div class="white-box-container">
+        <div class="box">
+          <h2>Academics</h2>
+          <div class="container3">
+            <div>
+              <h2 class="smaller-text">IB Courses Program (Finish May 2023)</h2>
+              <ul>
+                <li>SEHS HL</li>
+                <li>English Lang. & Lit. SL</li>
+                <li>Maths AI SL</li>
+                <li>Business Management SL</li>
+                <li>French AB Initio SL</li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="smaller-text">GCSE (Finish May 2021)</h2>
+              <ul>
+                <li>Photography Grade 6</li>
+                <li>English Literature Grade 6</li>
+                <li>Maths Grade 5</li>
+                <li>Engineering BTEC Level 2 pass</li>
+                <li>English Language Grade 4</li>
+                <li>Combined Science Grade 4</li>
+                <li>Geography Grade 3</li>
+              </ul>
+            </div>
+          </div>
+          <div class="newcontainer3">
+            <h2 class="smaller-text">Online Courses (Completed Final Assessment
+              and passed)</h2>
+            <div class="coursescontainer3">
+              <ul>
+                <li>Introduction to HTML and CSS on <a href="https://alison.com/course/introduction-to-html-and-css">Alison</a> with an 100% score</li>
+                <li>HTML5 Game Development - Lessons and Development Planning on <a href="https://alison.com/course/html5-game-development-lessons-and-development-planning-revised">Alison</a> with an 85% score</li>
+              </ul>
+              <ul>
+                <li>Introduction to Computer Hardware and Software on <a href="https://alison.com/course/introduction-to-computer-hardware-and-software">Alison</a> with an 88% score</li>
+                <li>How To Build A Computer on <a href="https://alison.com/course/how-to-build-your-own-computer">Alison</a> with a 90% score</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ul>
+      </ul>
+
+      <div class="container3">
+
+      </div>
+
+      <div class="container">
+        <div class="white-box-container long-box">
+          <div class="box">
+            <h2>MY MUSIC (FAVOURITES PLAYLIST)</h2>
+            <iframe title="deezer-widget"
+              src="https://widget.deezer.com/widget/dark/playlist/3992664182"
+              width="100%"
+              height="700" frameborder="0" allowtransparency="true"
+              allow="encrypted-media; clipboard-write"></iframe>
+          </div>
+        </div>
+        <div class="white-box-container">
+          <div class="box">
+            <h2>Bucket List</h2>
+            <p style="font-size: 25px;">
+              ☒ Go Skydiving (Completed 26th May 2023)<br>
+              ☐ Get a Degree<br>
+              ☐ Start a Business<br>
+              ☐ Visit 100 Countries (Listed Below)<br>
+              ☐ Go to Antarctica<br>
+              ☐ Have a Net Worth Of 1 Million
+            </p>
+          </div>
+        </div>
+        <div class="white-box-container">
+          <div class="box">
+            <h2>COUNTRIES I'VE BEEN</h2>
+            <div class="countries-div">
+              1. England <br>
+              2. Wales<br>
+              3. Scotland<br>
+              4. France<br>
+              5. Spain<br>
+              6. Qatar<br>
+              7. United Arab Emirates
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+
+  </html>
