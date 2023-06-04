@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <style>
+<head>
+  <style>
     body {
       font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif;
       margin: 0;
@@ -94,6 +94,8 @@
       padding-top: 50px;
     }
 
+
+
     .top-container2 {
       padding-left: 15%;
       padding-right: 15%;
@@ -110,6 +112,10 @@
       background-color: rgba(255, 255, 255, 0.8);
       padding: 20px;
       border-radius: 10px;
+    }
+
+    .white-box-container .box .bucket-list {
+      font-size: 25px;
     }
 
     .box {
@@ -155,130 +161,186 @@
     .box li {
       text-align: left;
     }
+
+    @media (max-width: 980px) {
+      .container3 {
+        grid-template-columns: repeat(1, 2fr);
+      }
+
+      .container {
+        grid-template-columns: repeat(1, 2fr);
+      }
+
+      .container {
+        padding-left: 0%;
+        padding-right: 0%;
+      }
+
+      .top-container {
+        padding-left: 2%;
+        padding-right: 2%;
+      }
+
+      .top-container2 {
+        padding-left: 2%;
+        padding-right: 2%;
+      }
+
+      .top-container3 {
+        padding-left: 2%;
+        padding-right: 2%;
+      }
+
+      .top-container3 .container3 {
+        font-size: 40px;
+      }
+
+      .top-container3 .newcontainer3 {
+        font-size: 40px;
+      }
+
+      .box h2 {
+        font-size: 50px;
+      }
+
+      .white-box-container .box .bucket-list {
+        font-size: 50px;
+      }
+
+      .countries-div {
+        font-size: 60px;
+      }
+
+      .top-container .white-box-container .smaller-text {
+        font-size: 35px;
+      }
+
+      .top-container2 .white-box-container .smaller-text {
+        font-size: 35px;
+      }
+
+    }
   </style>
-  </head>
+</head>
 
-  <body>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="CS.html">Computer Science</a></li>
-        <li><a href="photography.html">Photography</a></li>
-        <li><a href="mushrooms.html">Mushrooms</a></li>
-        <li><a href="calculators.html">Calculators</a></li>
-      </ul>
-    </nav>
-    <div>
-      <br>
-    </div>
-    <div class="top-container">
-      <div class="white-box-container">
-        <div class="box">
-          <h2>WELCOME TO MY WEBSITE</h2>
-          <p class="smaller-text">I've created this website to include lots of
-            information about myself and what I'm interested in. I will also
-            include other things like the projects I'm working on.</p>
-        </div>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="CS.html">Computer Science</a></li>
+      <li><a href="photography.html">Photography</a></li>
+      <li><a href="mushrooms.html">Mushrooms</a></li>
+      <li><a href="calculators.html">Calculators</a></li>
+    </ul>
+  </nav>
+  <div>
+    <br>
+  </div>
+  <div class="top-container">
+    <div class="white-box-container">
+      <div class="box">
+        <h2>WELCOME TO MY WEBSITE</h2>
+        <p class="smaller-text">I've created this website to include lots of
+          information about myself and what I'm interested in. I will also
+          include other things like the projects I'm working on.</p>
       </div>
     </div>
+  </div>
 
-    <div class="top-container2">
-      <div class="white-box-container">
-        <div class="box">
-          <h2>About Me</h2>
-          <p class="smaller-text">Hi, My name is Lou.
+  <div class="top-container2">
+    <div class="white-box-container">
+      <div class="box">
+        <h2>About Me</h2>
+        <p class="smaller-text">Hi, My name is Lou.
 
-            I'm passionate about a few things, I really like photography and
-            computer science. I also quite like the other types of science
-            (mostly Quantum Physics and even a little bit of crystallography)
-            but I don't get much time to do it. <br>
-            In my computer experience, I have done a few projects, you can find
-            some of them on my computer science page.</p>
+          I'm passionate about a few things, I really like photography and
+          computer science. I also quite like the other types of science
+          (mostly Quantum Physics and even a little bit of crystallography)
+          but I don't get much time to do it. <br>
+          In my computer experience, I have done a few projects, you can find
+          some of them on my computer science page.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="top-container3">
+    <div class="white-box-container">
+      <div class="box">
+        <h2>Academics</h2>
+        <div class="container3">
+          <div>
+            <h4>IB Courses Program (Finish May 2023)</h4>
+            <ul>
+              <li>SEHS HL</li>
+              <li>English Lang. & Lit. SL</li>
+              <li>Maths AI SL</li>
+              <li>Business Management SL</li>
+              <li>French AB Initio SL</li>
+            </ul>
+          </div>
+          <div>
+            <h4>GCSE (Finish May 2021)</h4>
+            <ul>
+              <li>Photography Grade 6</li>
+              <li>English Literature Grade 6</li>
+              <li>Maths Grade 5</li>
+              <li>Engineering BTEC Level 2 pass</li>
+              <li>English Language Grade 4</li>
+              <li>Combined Science Grade 4</li>
+              <li>Geography Grade 3</li>
+            </ul>
+          </div>
+        </div>
+        <div class="newcontainer3">
+          <h4>Online Courses (Completed Final Assessment
+            and passed)</h4>
+          <ul>
+            <li>Diploma In Website Development Using HTML and CSS On <a
+                href="https://alison.com/course/diploma-in-website-development-using-html-and-css">Alison</a></li>
+            <li>Introduction to HTML and CSS on <a
+                href="https://alison.com/course/introduction-to-html-and-css">Alison</a></li>
+            <li>HTML5 Game Development - Lessons and Development Planning on <a
+                href="https://alison.com/course/html5-game-development-lessons-and-development-planning-revised">Alison</a>
+            </li>
+            <li>Introduction to Computer Hardware and Software on <a
+                href="https://alison.com/course/introduction-to-computer-hardware-and-software">Alison</a></li>
+            <li>How To Build A Computer on <a href="https://alison.com/course/how-to-build-your-own-computer">Alison</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
 
-    <div class="top-container3">
+    <div class="container">
+
       <div class="white-box-container">
         <div class="box">
-          <h2>Academics</h2>
-          <div class="container3">
-            <div>
-              <h4>IB Courses Program (Finish May 2023)</h4>
-              <ul>
-                <li>SEHS HL</li>
-                <li>English Lang. & Lit. SL</li>
-                <li>Maths AI SL</li>
-                <li>Business Management SL</li>
-                <li>French AB Initio SL</li>
-              </ul>
-            </div>
-            <div>
-              <h4>GCSE (Finish May 2021)</h4>
-              <ul>
-                <li>Photography Grade 6</li>
-                <li>English Literature Grade 6</li>
-                <li>Maths Grade 5</li>
-                <li>Engineering BTEC Level 2 pass</li>
-                <li>English Language Grade 4</li>
-                <li>Combined Science Grade 4</li>
-                <li>Geography Grade 3</li>
-              </ul>
-            </div>
-          </div>
-          <div class="newcontainer3">
-            <h4>Online Courses (Completed Final Assessment
-              and passed)</h4>
-              <ul>
-                <li>Diploma In Website Development Using HTML and CSS On <a href="https://alison.com/course/diploma-in-website-development-using-html-and-css">Alison</a></li>
-                <li>Introduction to HTML and CSS on <a href="https://alison.com/course/introduction-to-html-and-css">Alison</a></li>
-                <li>HTML5 Game Development - Lessons and Development Planning on <a href="https://alison.com/course/html5-game-development-lessons-and-development-planning-revised">Alison</a></li>
-                <li>Introduction to Computer Hardware and Software on <a href="https://alison.com/course/introduction-to-computer-hardware-and-software">Alison</a></li>
-                <li>How To Build A Computer on <a href="https://alison.com/course/how-to-build-your-own-computer">Alison</a></li>
-              </ul>
+          <h2>Bucket List</h2>
+          <p class="bucket-list">
+            ☒ Go Skydiving (Completed 26th May 2023)<br>
+            ☐ Get a Degree<br>
+            ☐ Start a Business<br>
+            ☐ Visit 100 Countries (Listed Below)<br>
+            ☐ Go to Antarctica<br>
+            ☐ Have a Net Worth Of 1 Million
+          </p>
+        </div>
+      </div>
+      <div class="white-box-container">
+        <div class="box">
+          <h2>COUNTRIES I'VE BEEN</h2>
+          <div class="countries-div">
+            1. England <br>
+            2. Wales<br>
+            3. Scotland<br>
+            4. France<br>
+            5. Spain<br>
+            6. Qatar<br>
+            7. United Arab Emirates
           </div>
         </div>
       </div>
+    </div>
+</body>
 
-      <div class="container">
-        <div class="white-box-container long-box">
-          <div class="box">
-            <h2>MY MUSIC (FAVOURITES PLAYLIST)</h2>
-            <iframe title="deezer-widget"
-              src="https://widget.deezer.com/widget/dark/playlist/3992664182"
-              width="100%"
-              height="700" frameborder="0" allowtransparency="true"
-              allow="encrypted-media; clipboard-write"></iframe>
-          </div>
-        </div>
-        <div class="white-box-container">
-          <div class="box">
-            <h2>Bucket List</h2>
-            <p style="font-size: 25px;">
-              ☒ Go Skydiving (Completed 26th May 2023)<br>
-              ☐ Get a Degree<br>
-              ☐ Start a Business<br>
-              ☐ Visit 100 Countries (Listed Below)<br>
-              ☐ Go to Antarctica<br>
-              ☐ Have a Net Worth Of 1 Million
-            </p>
-          </div>
-        </div>
-        <div class="white-box-container">
-          <div class="box">
-            <h2>COUNTRIES I'VE BEEN</h2>
-            <div class="countries-div">
-              1. England <br>
-              2. Wales<br>
-              3. Scotland<br>
-              4. France<br>
-              5. Spain<br>
-              6. Qatar<br>
-              7. United Arab Emirates
-            </div>
-          </div>
-        </div>
-      </div>
-    </body>
-
-  </html>
+</html>
