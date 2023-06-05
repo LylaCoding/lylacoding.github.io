@@ -1,76 +1,77 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-/* General styles */
-body {
-  font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif;
-  margin: 0;
-  background-color: #61177c;
-  color: rgb(0, 0, 0);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
 
-/* Calculator styles */
-.calculator-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 80%;
-  max-width: 400px;
-}
+<head>
+  <style>
+    /* General styles */
+    body {
+      font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif;
+      margin: 0;
+      background-color: #61177c;
+      color: rgb(0, 0, 0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
 
-.calculator-box {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  border-radius: 10px;
-  width: 400px;
-}
+    /* Calculator styles */
+    .calculator-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      max-width: 400px;
+    }
 
-.calculator-box h2 {
-  font-size: 26px;
-  margin-top: 0;
-  margin-bottom: 0px;
-}
+    .calculator-box {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      width: 400px;
+    }
 
-.calculator-box label {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
+    .calculator-box h2 {
+      font-size: 26px;
+      margin-top: 0;
+      margin-bottom: 0px;
+    }
 
-.calculator-box input[type="number"] {
-  padding: 6px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 100%;
-  box-sizing: border-box;
-}
+    .calculator-box label {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
 
-.calculator-box button {
-  padding: 8px 16px;
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 100%;
-  margin-top: 10px;
-}
+    .calculator-box input[type="number"] {
+      padding: 6px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+      box-sizing: border-box;
+    }
 
-.calculator-box button:hover {
-  background-color: #45a049;
-}
+    .calculator-box button {
+      padding: 8px 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 10px;
+    }
 
-.calculator-box #result {
-  margin-top: 16px;
-  font-weight: bold;
-}
+    .calculator-box button:hover {
+      background-color: #45a049;
+    }
 
-.container3 {
+    .calculator-box #result {
+      margin-top: 16px;
+      font-weight: bold;
+    }
+
+    .container3 {
       display: grid;
       grid-template-columns: repeat(2, 2fr);
       grid-template-rows: auto;
@@ -80,16 +81,8 @@ body {
       padding-right: 2%;
     }
 
-    @media (max-aspect-ratio: 16/9) {
-
-      /* Styles for mobile devices with a maximum width of 767px */
-      .container3 {
-        grid-template-columns: repeat(1, 2fr);
-      }
-    }
-
     .container3 .padding {
-padding: 20px;
+      padding: 20px;
     }
 
     canvas {
@@ -99,44 +92,29 @@ padding: 20px;
       background-color: transparent;
     }
 
-    @media (max-aspect-ratio: 16/9) {
+    /* Navigation styles */
+    nav {
+      background-color: #f2f2f2;
+      padding: 10px;
+      text-align: center;
+      font-size: 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 9999;
+    }
 
-/* Styles for mobile devices with a maximum width of 767px */
-.container3 .padding {
-  padding: 0px;
-}
-}
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
 
-/* Navigation styles */
-nav {
-  background-color: #f2f2f2;
-  padding: 10px;
-  text-align: center;
-  font-size: 20px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 9999;
-}
+    nav ul li {
+      display: inline;
+    }
 
-@media (max-aspect-ratio: 16/9) {
-  /* Styles for mobile devices with a maximum width of 767px */
-  nav {
-    font-size: 27px;
-  }
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-}
-
-nav ul li a {
+    nav ul li a {
       text-decoration: none;
       padding: 5px 10px;
       color: #333;
@@ -148,33 +126,50 @@ nav ul li a {
       background-color: #ccc;
       font-size: 102.5%;
     }
-        </style>
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="CS.html">Computer Science</a>
-        </li>
-        <li>
-          <a href="photography.html">Photography</a>
-        </li>
-        <li>
-          <a href="mushrooms.html">Mushrooms</a>
-        </li>
-        <li><a href="calculators.html">Calculators</a></li>
-      </ul>
-    </nav>
 
-    <canvas id="c" style="z-index: -999;"></canvas>
-    <script src="background.js"></script>
+    @media (max-width: 980px) {
 
-    <div class="container3">
+      nav {
+        font-size: 27px;
+      }
 
-<div class="padding">
+      .container3 .padding {
+        padding: 0px;
+      }
+
+      .container3 {
+        grid-template-columns: repeat(1, 2fr);
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="CS.html">Computer Science</a>
+      </li>
+      <li>
+        <a href="photography.html">Photography</a>
+      </li>
+      <li>
+        <a href="mushrooms.html">Mushrooms</a>
+      </li>
+      <li><a href="calculators.html">Calculators</a></li>
+    </ul>
+  </nav>
+
+  <canvas id="c" style="z-index: -999;"></canvas>
+  <script src="background.js"></script>
+
+  <div class="container3">
+
+    <div class="padding">
 
       <div class="calculator-container">
         <div class="calculator-box">
@@ -192,7 +187,7 @@ nav ul li a {
       </div>
     </div>
 
-  <div class="padding">
+    <div class="padding">
       <div class="calculator-container">
         <div class="calculator-box">
           <h2>People Born Since You Were</h2>
@@ -207,7 +202,8 @@ nav ul li a {
         </div>
       </div>
     </div>
-    </div>
-    <script src="calculators.js"></script>
-  </body>
+  </div>
+  <script src="calculators.js"></script>
+</body>
+
 </html>
