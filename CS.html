@@ -7,8 +7,15 @@
     body {
       font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif;
       margin: 0;
-      background-color: #87ceeb;
+      background-color: #61177c;
       color: #fff;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: transparent;
     }
 
     .container {
@@ -135,6 +142,10 @@
       <li><a href="calculators.html">Calculators</a></li>
     </ul>
   </nav>
+
+  <canvas id="c" style="z-index: -999;"></canvas>
+  <script src="background.js"></script>
+
   <div class="container">
 
     <div class="top-container2">
