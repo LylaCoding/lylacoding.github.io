@@ -43,3 +43,9 @@ p {
     max-width: calc(50% - 20px); /* 25% minus margin */
     box-sizing: border-box;
 }
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
