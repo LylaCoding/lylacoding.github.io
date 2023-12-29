@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="utf-8" />
+
+</head>
+
+<body>
+
+  <div class="image-container">
+    <img src="Photos/MCU.png" style="width: 400px; position: fixed; border: 0px;" alt="Image description">
+  </div>
+
+  <div class="timeline-boxes" style="position: absolute;">
+
+    <div class="box" id="box" style="margin-left: 75px;">
+      <p class="date-box">1942</p>
+      <img src="Photos/CATFA.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="branch-bottom"><br></p>
+    </div>
+
+    <div class="box" id="box">
+      <p class="branch-bottom"><br></p>
+      <img src="Photos/CapM.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="date-box">1995</p>
+    </div>
+
+    <div class="box" id="box">
+      <p class="date-box">2008</p>
+      <img src="Photos/IronMan.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="branch-bottom"><br></p>
+    </div>
+
+    <div class="box" id="box">
+      <p class="branch-bottom"><br></p>
+      <img src="Photos/IronMan2.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="date-box">2011</p>
+    </div>
+
+    <div class="box" id="box">
+      <p class="date-box">2011</p>
+      <img src="Photos/TIHulk.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="branch-bottom"><br></p>
+    </div>
+
+    <div class="box" id="box">
+      <p class="branch-bottom"><br></p>
+      <img src="Photos/Thor.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="date-box">2011</p>
+    </div>
+
+    <div class="box" id="box">
+      <p class="date-box">2012</p>
+      <img src="Photos/IronMan3.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="branch-bottom"><br></p>
+    </div>
+
+    <div class="box" id="box">
+      <p class="branch-bottom"><br></p>
+      <img src="Photos/ThorTDW.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="date-box">2013</p>
+    </div>
+
+    <div class="box" id="box">
+      <p class="date-box">2014</p>
+      <img src="Photos/CATWS.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="branch-bottom"><br></p>
+    </div>
+
+    <div class="box" id="box">
+      <p class="branch-bottom"><br></p>
+      <img src="Photos/GOTG.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="date-box">2014</p>
+    </div>
+
+    <div class="box" id="box">
+      <p class="date-box">2014</p>
+      <img src="Photos/GOTGV2.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="branch-bottom"><br></p>
+    </div>
+
+    <div class="box" id="box">
+      <p class="branch-bottom"><br></p>
+      <img src="Photos/AvengersAOU.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="date-box">2015</p>
+    </div>
+
+    <div class="box" id="box">
+      <p class="date-box">2015</p>
+      <img src="Photos/ANTMAN.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="branch-bottom"><br></p>
+    </div>
+
+    <div class="box" id="box">
+      <p class="branch-bottom"><br></p>
+      <img src="Photos/CACW.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="date-box">2016</p>
+    </div>
+
+    <div class="box" id="box">
+      <p class="date-box">2011</p>
+      <img src="Photos/Avengers.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="branch-bottom"><br></p>
+    </div>
+
+    <div class="box" id="box">
+      <p class="branch-bottom"><br></p>
+      <img src="Photos/BlackW.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="date-box">2016</p>
+    </div>
+
+    <div class="box" id="box">
+      <p class="date-box">2016</p>
+      <img src="Photos/SMHC.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="branch-bottom"><br></p>
+    </div>
+
+    <div class="box" id="box">
+      <p class="branch-bottom"><br></p>
+      <img src="Photos/DoctorS.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="date-box">2016-17</p>
+    </div>
+
+    <div class="box" id="box">
+      <p class="date-box">2017</p>
+      <img src="Photos/BlackP.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="branch-bottom"><br></p>
+    </div>
+
+    <div class="box" id="box">
+      <p class="branch-bottom"><br></p>
+      <img src="Photos/ThorR.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="date-box">2017</p>
+    </div>
+
+    <div class="box" id="box">
+      <p class="date-box">2017</p>
+      <img src="Photos/AntManWasp.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="branch-bottom"><br></p>
+
+    </div>
+
+    <div class="box" id="box">
+      <p class="branch-bottom"><br></p>
+      <img src="Photos/AvengersInfinity.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="date-box">2017</p>
+
+    </div>
+
+    <div class="box" id="box">
+      <p class="date-box">2017-22</p>
+      <img src="Photos/AvengersEndgame.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="branch-bottom"><br></p>
+    </div>
+
+
+    <div class="box" id="box">
+      <p class="branch-bottom"><br></p>
+      <img src="Photos/ShangChi.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="date-box">2023</p>
+
+    </div>
+
+    <div class="box" id="box">
+      <p class="date-box">2023</p>
+      <img src="Photos/SMFFH.jpg" style="width: auto; height: inherit;"></img>
+      <p class="branch-bottom"><br></p>
+    </div>
+
+    <div class="box" id="box">
+      <p class="branch-bottom"><br></p>
+      <img src="Photos/Eternals.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="date-box">2023, excluding flashbacks</p>
+
+    </div>
+
+    <div class="box" id="box">
+      <p class="date-box">2024</p>
+      <img src="Photos/SMNWH.webp" style="width: auto; height: inherit;"></img>
+      <p class="branch-bottom"><br></p>
+    </div>
+
+    <div class="box" id="box">
+      <p class="branch-bottom"><br></p>
+      <img src="Photos/DoctorSMOM.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="date-box">2025</p>
+    </div>
+
+    <div class="box" id="box">
+      <p class="date-box">2025</p>
+      <img src="Photos/ThorLAT.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="branch-bottom"><br></p>
+    </div>
+
+    <div class="box" id="box">
+      <p class="branch-bottom"><br></p>
+      <img src="Photos/BlackPWF.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="date-box">2025</p>
+
+    </div>
+
+    <div class="box" id="box">
+      <p class="date-box">2025</p>
+      <img src="Photos/AntManATWQuant.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="branch-bottom"><br></p>
+    </div>
+
+    <div class="box" id="box">
+      <p class="branch-bottom"><br></p>
+      <img src="Photos/GOTGV3.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="date-box">2025</p>
+    </div>
+
+    <div class="box" id="box">
+      <p class="date-box">2025</p>
+      <img src="Photos/TheMarvels.jpeg" style="width: auto; height: inherit;"></img>
+      <p class="branch-bottom"><br></p>
+    </div>
+
+    <script src="sketch.js"></script>
+  </div>
+
+<p style="color: white; position: fixed; margin: 16px; bottom: 0; right: 0;">Updated 29/12/2023</p>
+
+</body>
+
+</html>
