@@ -1,133 +1,51 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Clickable Image</title>
-  <style>
-
-body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-
-    .image-container {
-      position: relative;
-    }
-
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      background-color: rgba(0, 0, 0, 0.5);
-      transition: opacity 0.3s ease;
-    }
-
-/* CSS for a yellow box with curved corners and a darker yellow border */
-.yellow-box {
-  width: 400px; /* Set your desired width */
-  height: 350px; /* Set your desired height */
-  background-color: yellow; /* Yellow background color */
-  border: 2px solid #FFD700; /* Darker yellow border */
-  border-radius: 10px; /* Border radius for curved corners */
-  padding: 20px; /* Padding inside the box */
-  box-sizing: border-box; /* Include padding in width and height */
-  z-index: 999; 
-  position: absolute;
-}
-
-
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
-
 
 
 
 <body>
 
-<div class="image-container">
-  <img src="kitchen.png" alt="Your Image" usemap="#image-map">
-</div>
-
-<map name="image-map">
-  <!-- Define your clickable areas here -->
-  <area shape="rect" coords="131,417,263,503" onclick="clickOven(event)" alt="Clickable Area">
-  <area shape="rect" coords="100,38,290,200" onclick="clickFan(event)" alt="Clickable Area">
-  <area shape="rect" coords="0,90,42,584" onclick="clickFridge(event)" alt="Clickable Area">
-</map>
-
-
-<div class="yellow-box" id="ovenInfoBox" style="display: none;">
-<p> Facts about oven here </p>
-</div>
-
-<div class="yellow-box" id="fanInfoBox" style="display: none;">
-    <p> Facts about fan here </p>
+  <div class="image-container">
+    <img src="kitchen.png" alt="Your Image" usemap="#image-map">
+    <div class="sidebar" style="width: 250px; background-color: green;">
+      <button onclick="startTimer()">Start Timer</button>
+      <button onclick="pauseTimer()">Pause Timer</button>
+      <p id="timer">2:00</p></div>
     </div>
+  </div>
 
-    <div class="yellow-box" id="fridgeInfoBox" style="display: none;">
-        <p> Facts about fridge here </p>
-        </div>
-
-
-
-
-
+  <map name="image-map">
+    <area shape="rect" coords="131,417,263,503" onclick="clickOven(event)" alt="Clickable Area">
+    <area shape="rect" coords="100,38,290,200" onclick="clickFan(event)" alt="Clickable Area">
+    <area shape="rect" coords="0,90,42,584" onclick="clickFridge(event)" alt="Clickable Area">
+  </map>
 
 
+  <div class="infoBox" id="fanInfoBox" style="display: none;">
+    <p> Facts about fan here </p>
+    <button id="closeFanButton"> CLOSE </button>
+  </div>
 
-<script>
+  <div class="infoBox" id="ovenInfoBox" style="display: none;">
+    <p> Facts about oven here </p>
+    <button id="closeOvenButton"> CLOSE </button>
+  </div>
 
-function clickOven(event) {
-
-    var div = document.getElementById('ovenInfoBox');
-  if (div.style.display === 'none') {
-    div.style.display = 'block';
-    // Adding a click event listener to the document to hide the div when clicking outside of it
-    document.addEventListener('click', clickOutside);
-  } else {
-    div.style.display = 'none';
-    document.removeEventListener('click', clickOutside);
-  }
-
-}
+  <div class="infoBox" id="fridgeInfoBox" style="display: none;">
+    <p> Facts about fridge here </p>
+    <button id="closeFridgeButton"> CLOSE </button>
+  </div>
 
 
-function clickFan(event) {
-
-var div = document.getElementById('fanInfoBox');
-if (div.style.display === 'none') {
-div.style.display = 'block';
-// Adding a click event listener to the document to hide the div when clicking outside of it
-document.addEventListener('click', clickOutside);
-} else {
-div.style.display = 'none';
-document.removeEventListener('click', clickOutside);
-}
-
-}
-
-function clickFridge(event) {
-
-var div = document.getElementById('fridgeInfoBox');
-if (div.style.display === 'none') {
-div.style.display = 'block';
-// Adding a click event listener to the document to hide the div when clicking outside of it
-document.addEventListener('click', clickOutside);
-} else {
-div.style.display = 'none';
-document.removeEventListener('click', clickOutside);
-}
-
-}
-
-
-</script>
+  <script src="script.js"></script>
 
 </body>
+
 </html>
