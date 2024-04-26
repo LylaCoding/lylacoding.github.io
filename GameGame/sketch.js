@@ -19,29 +19,23 @@ function preload() {
 function setup() {
     createCanvas(windowWidth, windowHeight);
 
+    let buttonSize = min(windowWidth, windowHeight) * 0.2; // Adjust button size based on screen size
+
     let contactButton = createImg('ContactButton.png', 'Contact Button');
-    contactButton.size(contactButton.width / 3, contactButton.height / 3)
-    contactButton.position((windowWidth / 2) - windowWidth * 0.35, (windowHeight / 2) - windowHeight * 0.35)
-    contactButton.mousePressed(contactClicked)
+    contactButton.size(buttonSize, buttonSize);
+    contactButton.position(windowWidth * 0.25 - buttonSize / 2, windowHeight / 2 - buttonSize / 2);
+    contactButton.mousePressed(contactClicked);
 
     let messageButton = createImg('MessageButton.png', 'Message Button');
-    messageButton.size(messageButton.width / 3, messageButton.height / 3)
-    messageButton.position((windowWidth / 2) + ((windowWidth * 0.35) - messageButton.width), (windowHeight / 2) - windowHeight * 0.35)
-    messageButton.mousePressed(messageClicked)
+    messageButton.size(buttonSize, buttonSize);
+    messageButton.position(windowWidth * 0.75 - buttonSize / 2, windowHeight / 2 - buttonSize / 2);
+    messageButton.mousePressed(messageClicked);
 }
 
 function draw() {
     background(245, 169, 184);
 
-    if (contactBox) {
-        if (!displayedText) {
-            displayedText = contacts[floor(random(contacts.length))];
-        }
-        displayBox(displayedText);
-    } else if (messageBox) {
-        if (!displayedText) {
-            displayedText = messages[floor(random(messages.length))];
-        }
+    if (contactBox || messageBox) {
         displayBox(displayedText);
     } else {
         if (closeButton) {
@@ -54,41 +48,43 @@ function draw() {
 
 function displayBox(boxText) {
     textAlign(CENTER, CENTER);
-    let rectX = (width / 2) - 100;
-    let rectY = (height / 2) - 50;
-  
-    textSize(20);
-    textWrap(WORD)
+    let rectWidth = min(width, height) * 0.4; // Adjust box size based on screen size
+    let rectHeight = min(width, height) * 0.6;
+    let rectX = (width - rectWidth) / 2;
+    let rectY = (height - rectHeight) / 2;
+
+    textSize(min(width, height) * 0.04); // Adjust text size based on screen size
     textFont("Comic Sans MS");
 
-    rect(rectX, rectY, 200, 300, 20);
-    text(boxText, rectX+7.5, rectY + 150, 185);
+    fill(255);
+    rect(rectX, rectY, rectWidth, rectHeight, 20);
+    fill(0);
+    text(boxText, rectX + 10, rectY + rectHeight / 2, rectWidth - 20);
 
     if (!closeButton) {
-        loadCloseButton();
+        loadCloseButton(rectX + rectWidth / 2, rectY + rectHeight - 20);
     }
 }
 
-function loadCloseButton() {
+function loadCloseButton(x, y) {
     closeButton = createButton('Discard Card');
-    closeButton.position((windowWidth / 2) - closeButton.width / 2, (windowHeight / 2) + 200);
+    closeButton.position(x - closeButton.width / 2, y);
     closeButton.mousePressed(closeBoxFunc);
 }
 
 function contactClicked() {
     contactBox = true;
     messageBox = false;
-    displayedText = null; // Reset displayedText when switching boxes
+    displayedText = contacts[floor(random(contacts.length))];
 }
 
 function messageClicked() {
     messageBox = true;
     contactBox = false;
-    displayedText = null; // Reset displayedText when switching boxes
+    displayedText = messages[floor(random(messages.length))];
 }
 
 function closeBoxFunc() {
     contactBox = false;
     messageBox = false;
-    displayedText = null; // Reset displayedText when closing the box
 }
