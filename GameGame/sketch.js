@@ -19,17 +19,17 @@ function preload() {
 function setup() {
     createCanvas(windowWidth, windowHeight);
 
-    let buttonSize = min(windowWidth, windowHeight) * 0.2; // Adjust button size based on screen size
+    let buttonSize = min(windowWidth, windowHeight) * 0.15;
 
     let contactButton = createImg('ContactButton.png', 'Contact Button');
-    contactButton.size(buttonSize, buttonSize);
-    contactButton.position(windowWidth * 0.25 - buttonSize / 2, windowHeight / 2 - buttonSize / 2);
-    contactButton.mousePressed(contactClicked);
+    contactButton.size(contactButton.width / 2, contactButton.height / 2)
+    contactButton.position((windowWidth / 2) - windowWidth * 0.45, (windowHeight / 2) - windowHeight * 0.45)
+    contactButton.mousePressed(contactClicked)
 
     let messageButton = createImg('MessageButton.png', 'Message Button');
-    messageButton.size(buttonSize, buttonSize);
-    messageButton.position(windowWidth * 0.75 - buttonSize / 2, windowHeight / 2 - buttonSize / 2);
-    messageButton.mousePressed(messageClicked);
+    messageButton.size(messageButton.width / 2, messageButton.height / 2)
+    messageButton.position((windowWidth / 2) + ((windowWidth * 0.45) - messageButton.width), (windowHeight / 2) - windowHeight * 0.45)
+    messageButton.mousePressed(messageClicked)
 }
 
 function draw() {
@@ -42,18 +42,18 @@ function draw() {
             closeButton.remove();
             closeButton = undefined;
         }
-        displayedText = null; // Reset displayedText when no box is displayed
+        displayedText = null;
     }
 }
 
 function displayBox(boxText) {
     textAlign(CENTER, CENTER);
-    let rectWidth = min(width, height) * 0.4; // Adjust box size based on screen size
+    let rectWidth = min(width, height) * 0.4;
     let rectHeight = min(width, height) * 0.6;
     let rectX = (width - rectWidth) / 2;
-    let rectY = (height - rectHeight) / 2;
+    let rectY = ((height - rectHeight) / 2)+60;
 
-    textSize(min(width, height) * 0.04); // Adjust text size based on screen size
+    textSize(min(width, height) * 0.04);
     textFont("Comic Sans MS");
 
     fill(255);
