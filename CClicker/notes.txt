@@ -1,0 +1,26 @@
+Ideas
+Have a generative cookie so 'chips' are in different places each time
+other decorations to it?
+add a texture to the cookie and chocolate
+
+have cookies falling from the op (create a class reuse balls or lava/waterfalls?)
+
+achievements that change the look/appearance
+
+update visuals / background / interface etc
+
+add sound to cookie click (DONE)
+add sound to upgrade buttons
+
+
+
+https://cookieclicker.fandom.com/wiki/Building
+
+for prices of upgrades
+
+test
+
+
+1440 - 1142 = 
+
+down 14 right 14
