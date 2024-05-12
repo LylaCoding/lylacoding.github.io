@@ -116,7 +116,7 @@ function draw() {
     fill(0)
     textAlign(LEFT, CENTER);
     textSize(15);
-    text('Credits: Lyla (Coder), Joe (Co-Coder), Wilf (Artist), Rv (Artist), Lennox (Researcher)', 3, 387)
+    text('Credits: Lyla (Primary Coder), Joe (Coder), Wilf (Artist), Rv (Artist), Lennox (Researcher)', 3, 387)
     
     textAlign(CENTER, CENTER);
     fill(255)
