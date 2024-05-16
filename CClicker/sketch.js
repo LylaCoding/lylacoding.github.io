@@ -41,6 +41,17 @@ let WizardTowerUpgradeAmount = 44000;
 let ShipmentUpgradeAmount = 260000;
 let AlchemyLabUpgradeAmount = 1600000;
 
+let CursorBought = 0;
+let GrandmaBought = 0;
+let FarmBought = 0;
+let MineBought = 0;
+let FactoryBought = 0;
+let BankBought = 0;
+let TempleBought = 0;
+let WizardBought = 0;
+let ShipmentBought = 0;
+let AlchemyLabBought = 0;
+
 
 
 function preload() {
@@ -225,6 +236,38 @@ function displayUpgrades() {
   // Variation 9
   text('Upgrade Cost: ' + round(AlchemyLabUpgradeCost), (width - 290), (height - height) + 55 + tileOffset * 9);
 
+  textAlign(RIGHT, BOTTOM);
+  textSize(10);
+
+  text('Bought: ' + round(CursorBought), (width - 5), (height - height) + 55);
+
+  // Variation 1
+  text('Bought: ' + round(GrandmaBought), (width - 5), (height - height) + 55 + tileOffset * 1);
+
+  // Variation 2
+  text('Bought: ' + round(FarmBought), (width - 5), (height - height) + 55 + tileOffset * 2);
+
+  // Variation 3
+  text('Bought: ' + round(MineBought), (width - 5), (height - height) + 55 + tileOffset * 3);
+
+  // Variation 4
+  text('Bought: ' + round(FactoryBought), (width - 5), (height - height) + 55 + tileOffset * 4);
+
+  // Variation 5
+  text('Bought: ' + round(BankBought), (width - 5), (height - height) + 55 + tileOffset * 5);
+
+  // Variation 6
+  text('Bought: ' + round(TempleBought), (width - 5), (height - height) + 55 + tileOffset * 6);
+
+  // Variation 7
+  text('Bought: ' + round(WizardBought), (width - 5), (height - height) + 55 + tileOffset * 7);
+
+  // Variation 8
+  text('Bought: ' + round(ShipmentBought), (width - 5), (height - height) + 55 + tileOffset * 8);
+
+  // Variation 9
+  text('Bought: ' + round(AlchemyLabBought), (width - 5), (height - height) + 55 + tileOffset * 9);
+
 }
 
 function mouseClicked() {
@@ -282,6 +325,7 @@ function cursorClicked() {
     cookies -= CursorUpgradeCost;
     cookiesPerSecond += CursorUpgradeAmount;
     CursorUpgradeCost *= upgradeCostMultiplier;
+    CursorBought += 1;
   }
 }
 
@@ -290,6 +334,7 @@ function grandmaClicked() {
     cookies -= GrandmaUpgradeCost;
     cookiesPerSecond += GrandmaUpgradeAmount;
     GrandmaUpgradeCost *= upgradeCostMultiplier;
+    GrandmaBought += 1;
   }
 }
 
@@ -298,6 +343,7 @@ function farmClicked() {
     cookies -= FarmUpgradeCost;
     cookiesPerSecond += FarmUpgradeAmount;
     FarmUpgradeCost *= upgradeCostMultiplier;
+    FarmBought += 1;
   }
 }
 
@@ -306,6 +352,7 @@ function mineClicked() {
     cookies -= MineUpgradeCost;
     cookiesPerSecond += MineUpgradeAmount;
     MineUpgradeCost *= upgradeCostMultiplier;
+    MineBought += 1;
   }
 }
 
@@ -314,6 +361,7 @@ function factoryClicked() {
     cookies -= FactoryUpgradeCost;
     cookiesPerSecond += FactoryUpgradeAmount;
     FactoryUpgradeCost *= upgradeCostMultiplier;
+    FactoryBought += 1;
   }
 }
 
@@ -322,6 +370,7 @@ function bankClicked() {
     cookies -= BankUpgradeCost;
     cookiesPerSecond += BankUpgradeAmount;
     BankUpgradeCost *= upgradeCostMultiplier;
+    BankBought += 1
   }
 }
 
@@ -330,6 +379,7 @@ function templeClicked() {
     cookies -= TempleUpgradeCost;
     cookiesPerSecond += TempleUpgradeAmount;
     TempleUpgradeCost *= upgradeCostMultiplier;
+    TempleBought += 1;
   }
 }
 
@@ -338,6 +388,7 @@ function wizardTowerClicked() {
     cookies -= WizardTowerUpgradeCost;
     cookiesPerSecond += WizardTowerUpgradeAmount;
     WizardTowerUpgradeCost *= upgradeCostMultiplier;
+    WizardBought += 1;
   }
 }
 
@@ -346,6 +397,7 @@ function shipmentClicked() {
     cookies -= ShipmentUpgradeCost;
     cookiesPerSecond += ShipmentUpgradeAmount;
     ShipmentUpgradeCost *= upgradeCostMultiplier;
+    ShipmentBought += 1;
   }
 }
 
@@ -354,6 +406,7 @@ function alchemyLabClicked() {
     cookies -= AlchemyLabUpgradeCost;
     cookiesPerSecond += AlchemyLabUpgradeAmount;
     AlchemyLabUpgradeCost *= upgradeCostMultiplier;
+    AlchemyLabBought += 1;
   }
 }
 
