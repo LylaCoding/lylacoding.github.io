@@ -1,0 +1,42 @@
+.Nav {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+}
+
+.NavBoxes {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavBox {
+
+background-color: white;
+padding-left: 15px;
+padding-right: 15px;
+padding-top: 10px;
+padding-bottom: 10px;
+border-radius: 25px;
+margin: 7.5px;
+
+}
+
+.NavBox:hover {
+
+    background-color: rgb(205, 193, 197);
+
+}
+
+.NavBox a {
+
+    text-decoration: none;
+    color: black;
+
+}
