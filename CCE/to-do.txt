@@ -1,3 +1,0 @@
-Get images for levels
-
-create time function 
