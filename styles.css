@@ -126,5 +126,27 @@ h1 {
         font-size: 2.5vh;
     
     }
+
+    .RowsContainer {
+
+        padding: 10px;
+        margin: 5%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        justify-content: center;
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    .PhotoSelectBox img {
+
+        height: 50%;
+        width: 40vh;
+        border-radius: 25px;
+    
+    }
   
   }
