@@ -1,8 +1,12 @@
 body {
     font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif;
-    margin: 10;
-    padding: 10;
+    margin: auto;
     background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 body a {
@@ -20,4 +24,13 @@ body a:hover {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
+    font-size: 2.5vh;
+}
+
+body h1 {
+    font-size: 5vh;
+}
+
+body p {
+    font-size: 2.5vh;
 }
