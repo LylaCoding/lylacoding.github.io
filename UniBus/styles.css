@@ -7,6 +7,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: rgba(255, 255, 255, 0.466);
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
 }
 
 body a {
@@ -33,4 +39,8 @@ body h1 {
 
 body p {
     font-size: 2.5vh;
+}
+
+bg {
+    z-index: -1;
 }
