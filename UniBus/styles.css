@@ -35,6 +35,8 @@ body a:hover {
 
 body h1 {
     font-size: 5vh;
+    text-align: center;
+
 }
 
 body p {
