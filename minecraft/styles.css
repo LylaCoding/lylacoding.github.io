@@ -1,0 +1,88 @@
+body {
+    font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif;
+    margin: auto;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.466);
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+ul {
+
+padding: 0px;
+
+}
+
+#player-list {
+
+    margin: 25px;
+
+}
+
+ul, li {
+
+    list-style-type: none;
+    font-size: 4vh;
+
+}
+
+h1 {
+
+    margin: 1vh;
+    font-size: 4.5vh;
+}
+
+.MainBox {
+
+    height: auto;
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 25px;
+    display: flex;
+    padding: 1.5vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+
+p {
+
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 25px;
+    padding: 5px 15px 5px 15px;
+    margin: 5px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    font-size: 2.5vh;
+}
+
+
+@media screen and (max-width:600px) {
+
+    ul, li {
+
+        list-style-type: none;
+        font-size: 3vh;
+    
+    }
+    
+    h1 {
+    
+        margin: 1vh;
+        font-size: 3.5vh;
+    }
+  
+  }
