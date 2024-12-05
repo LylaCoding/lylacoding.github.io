@@ -11,9 +11,26 @@ function fetchJSONData() {
             playerList.innerHTML = ""; // Clear previous content
             if (data.players && data.players.list) {
                 data.players.list.forEach(player => {
-                    const listItem = document.createElement("li");
-                    listItem.textContent = player.name; // Add player's name
-                    playerList.appendChild(listItem); // Append to the list
+                    
+                    const listName = document.createElement("li");
+                    const players = document.createElement("div");
+                    const img = document.createElement("img");
+
+                    players.classList.add("playerDiv");
+
+                    img.src = "https://mineskin.eu/helm/" + player.name + "/50.png";
+                    listName.textContent = player.name; // Add player's name
+                    
+                    playerList.appendChild(players);
+
+                    players.appendChild(img);
+                    players.appendChild(listName);
+                    
+                    
+                    
+                    
+
+                    console.log("https://mineskin.eu/helm/" + player.name + "/100.png");
                 });
             } else {
                 playerList.textContent = "No players found.";
