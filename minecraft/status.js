@@ -11,10 +11,10 @@ function fetchJSONData() {
             StatusBox.innerHTML = ""; 
             if (data.online == true) {
                 console.log("server is online");
-                StatusBox.innerHTML = "Server Is online"
+                StatusBox.innerHTML = "🟢 Server Is online"
             } else {
                 console.log("server is offline");
-                StatusBox.innerHTML = "Server Is offline"
+                StatusBox.innerHTML = "🔴 Server Is offline"
             }
         })
         .catch((error) =>
