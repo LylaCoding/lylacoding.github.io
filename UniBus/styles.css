@@ -41,6 +41,7 @@ body h1 {
 
 body p {
     font-size: 2.5vh;
+    margin: 0px;
 }
 
 bg {
@@ -55,4 +56,5 @@ bg {
     padding: 5px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-top: 10px;
 }

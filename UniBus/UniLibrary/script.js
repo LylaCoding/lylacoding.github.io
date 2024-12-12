@@ -16,19 +16,27 @@ function getCurrentTime() {
     return `${hours}:${minutes}`;
 }
 
-// Function to find the next time from the list
-function getNextTime() {
+// Function to find the next two times from the list
+function getNextTimes() {
     const currentTime = getCurrentTime();
+    let nextTimes = [];
 
-    // Find the next time that is later than the current time
+    // Find the next two times that are later than the current time
     for (let time of times) {
         if (time > currentTime) {
-            return time;
+            nextTimes.push(time);
+            if (nextTimes.length === 2) {
+                return nextTimes;
+            }
         }
     }
 
-    // If no time is found (past the last time of the day), return the first time for the next day
-    return times[0];
+    // If less than two times are found (past the last time of the day), wrap around to the next day
+    while (nextTimes.length < 2) {
+        nextTimes.push(times[nextTimes.length]);
+    }
+
+    return nextTimes;
 }
 
 // Function to calculate the difference between two times in minutes
@@ -49,14 +57,17 @@ function calculateTimeDifference(current, next) {
     }
 }
 
-// Display the next time and the time left until it
+// Display the next two times and the time left until them
 function updateDisplay() {
     const currentTime = getCurrentTime();
-    const nextTime = getNextTime();
+    const [nextTime, secondNextTime] = getNextTimes();
     const timeDifference = calculateTimeDifference(currentTime, nextTime);
+    const secondTimeDifference = calculateTimeDifference(currentTime, secondNextTime);
 
     document.getElementById("next-time").textContent = `Next Scheduled Bus: ${nextTime}`;
     document.getElementById("time-left").textContent = `Time Until: ${timeDifference} minutes`;
+    document.getElementById("second-next-time").textContent = `Following Bus: ${secondNextTime}`;
+    document.getElementById("second-time-left").textContent = `Time Until: ${secondTimeDifference} minutes`;
 }
 
 // Run the function to update the display
