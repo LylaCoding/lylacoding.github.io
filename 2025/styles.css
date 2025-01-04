@@ -1,0 +1,28 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+}
+
+.progressBar {
+    background-color: #ffffff;
+    border: 5px solid #000000;
+    width: 90%;
+    height: 37px;
+}
+
+.progressBarFill {
+    background-color: #09ff00;
+    height: 37px;
+    width: 0%;
+    text-align: center;
+}
