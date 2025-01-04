@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Progress Bar Example</title>
     <link rel="stylesheet" href="NavBar.css">
+    <link rel="stylesheet" href="progressBarStyles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="Bg.css">
 </head>
 
 <body>
-
     <div class="bg"></div>
-
     <div class="NavContainer">
         <div class="Nav">
             <div class="NavBoxes">
@@ -30,37 +29,16 @@
         </div>
     </div>
 
-<div class="MainSec">
+    <div class="body2">
 
-    <div class="AboutMeBox">
-
-        <p>Click which photography page you want to see :3 :3</p>
+        <h1>2025 Progress Bar</h1>
+        <div class="progressBar">
+            <div class="progressBarFill" id="progressBarFill"></div>
+        </div>
+        <h1 id="yearPercent"></h1>
     </div>
 
-</div>
-
-    <div class="RowsContainer">
-
-        <a class="PhotoSelectBox" href="photography.html">
-
-            <h1>Normal Photography</h1>
-            <img src="photos/IMG_2518.jpg" alt="">
-            <p>Photos :3</p>
-        </a>
-
-        <a class="PhotoSelectBox" href="mushrooms.html">
-
-            <h1>Mushroom Photography</h1>
-            <img src="photos/Mica Cap 2.JPG" alt="">
-            <p>I like Mushrooms :3</p>
-        </a>
-
-    </div>
-
-
-
-    </div>
-
+    <script src="progress-bar.js"></script>
 </body>
 
 </html>

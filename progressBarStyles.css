@@ -1,15 +1,14 @@
 /* Base styles */
-body {
+.body2 {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
     color: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 90vh;
     text-align: center;
 }
 
