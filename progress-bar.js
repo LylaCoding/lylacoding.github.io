@@ -28,4 +28,5 @@ function logTimeDifference() {
         "in days: " + daysLeft;
 }
 
+logTimeDifference()
 setInterval(logTimeDifference, 1000);
