@@ -53,31 +53,59 @@ margin: 7.5px;
     display: none;
     font-size: 30px;
     cursor: pointer;
-    position: absolute;
+    position: relative;
     left: 15px;
     top: 15px;
-    background: none;
+    background: #ffffff;
+    border-radius: 20px;
     border: none;
-    padding: 15px;
+    padding: 7.54px 11.14px;
 }
 
 @media (max-width: 600px) {
     .NavBoxes {
         display: none;
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         top: 60px;
-        left: 0;
-        width: 100%;
+        left: 15px;
+        top: 15px;
+        width: 80%;
         background-color: white;
-        padding: 10px 0;
+        padding: 0;
     }
 
     .NavBoxes.active {
         display: flex;
+        position: relative;
+        border-radius: 0 20px 20px 20px;
+    }
+
+    .NavContainer.active{
+        padding: 0;
+    }
+
+    .Nav {
+        padding: 0;
+    }
+
+    .Nav.active {
+        padding: 0;
     }
 
     .Hamburger {
         display: block;
+        z-index: 9999;
     }
+
+    .Hamburger.active {
+        border-radius: 20px 20px 0 0 ;
+    }
+
+    .NavContainer {
+
+    
+        padding-top: 40px;
+        
+        }
 }
