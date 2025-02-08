@@ -4,8 +4,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: #303030;
     display: grid;
-    grid-template-rows: auto 1fr auto; /* Define three rows: logoBar, mainContent, menuBar */
-    height: 100vh; /* Ensure the body takes the full height of the viewport */
+    grid-template-rows: auto 1fr auto;
+    height: 100vh; 
 }
 
 .logo {
@@ -22,15 +22,14 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-
-    grid-row: 1; /* Place in the first row of the grid */
+    grid-row: 1;
 }
 
 hr {
-    border: none; /* Remove default border */
-    border-top: 1px solid #ccc; /* Add a top border */
-    margin: 10px 0 0 0; /* Add some vertical margin */
-    width: 100%; /* Ensure it spans the full width */
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0 0 0;
+    width: 100%; 
 }
 
 .menuBar {
@@ -39,7 +38,7 @@ hr {
     display: flex;
     justify-content: center;
     width: 100%;
-    grid-row: 3; /* Place in the third row of the grid */
+    grid-row: 3;
 }
 
 .menuBar a {
@@ -48,8 +47,8 @@ hr {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 30px;
-    flex: 1; /* Ensure equal spacing */
-    text-align: center; /* Center text */
+    flex: 1;
+    text-align: center;
 }
 
 .menuBar a:hover {
@@ -75,3 +74,39 @@ hr {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+
+.post {
+    background-color: #343434;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.post img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.post h3 {
+    margin: 10px 0;
+    color: rgb(167, 167, 167);
+}
+
+.post-info {
+    display: flex;
+    align-items: center;
+}
+
+.post-info h4 {
+    margin: 0 10px 0 0;
+}
+
+.post .post-info, .post p {
+    margin: 5px 0;
+}
+
+.interaction {
+padding: 15.5px 0;
+margin: 10px 10px 5px 10px;
+}

@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "author": "GraffitiKid123",
+        "caption": "This is the first post.",
+        "timestamp": "02/02/2025",
+        "image": "img1.jpg"
+    }, 
+    {
+        "id": 2,
+        "author": "GraffitiKid123",
+        "caption": "This is the first post.",
+        "timestamp": "02/02/2025",
+        "image": "img1.jpg"
+    }
+]
