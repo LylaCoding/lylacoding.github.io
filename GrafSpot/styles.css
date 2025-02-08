@@ -66,8 +66,10 @@ hr {
 .pageContent {
     grid-row: 2; 
     overflow-y: auto;
+    padding-bottom: 62px;
 }
 
+/* sorting out scroll bar */
 .pageContent::-webkit-scrollbar {
     display: none;
   }
@@ -76,6 +78,7 @@ hr {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+/* sorting out scroll bar */
 
 .post {
     background-color: #343434;
