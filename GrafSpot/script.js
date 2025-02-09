@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <i class="fa-solid fa-paper-plane fa-2xl interaction"></i>
                 </div>
                 <div class="post-info">
-                    <h4>${post.author}</h4>
+                    <h4 class="p-author">${post.author}</h4>
                     <h4>${post.caption}</h4>
                 </div>
                 <p>${post.timestamp}</p>

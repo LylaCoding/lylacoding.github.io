@@ -2,7 +2,7 @@
     {
         "id": 1,
         "author": "GraffitiKid123",
-        "caption": "This is the first post.",
+        "caption": "First post here.",
         "timestamp": "02/02/2025",
         "image": "img1.jpg"
     }, 
@@ -16,8 +16,8 @@
     {
         "id": 3,
         "author": "spotter931",
-        "caption": "Just spotted this!!!.",
+        "caption": "This alleyway was covered!!.",
         "timestamp": "21/01/2025",
-        "image": "img2.jpg"
+        "image": "img5.jpg"
     }
 ]
