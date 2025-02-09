@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
             pageContent.appendChild(postElement);
         });
 
-        // Add event listener to toggle heart icon class and color
         document.querySelectorAll('.heart-icon').forEach(icon => {
             icon.addEventListener('click', function () {
                 this.classList.toggle('fa-regular');
@@ -31,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (this.classList.contains('fa-solid')) {
                     this.style.color = '#ff2600';
                 } else {
-                    this.style.color = ''; // Reset to default color
+                    this.style.color = '';
                 }
             });
         });

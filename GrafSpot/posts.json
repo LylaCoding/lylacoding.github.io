@@ -1,22 +1,19 @@
 [
     {
-        "id": 1,
         "author": "GraffitiKid123",
-        "caption": "First post here.",
+        "caption": "First post here",
         "timestamp": "02/02/2025",
         "image": "img1.jpg"
     }, 
     {
-        "id": 2,
         "author": "spotter931",
-        "caption": "Just spotted this!!!.",
+        "caption": "Just spotted this!!!",
         "timestamp": "21/01/2025",
         "image": "img2.jpg"
     },
     {
-        "id": 3,
         "author": "spotter931",
-        "caption": "This alleyway was covered!!.",
+        "caption": "This alleyway was covered!!",
         "timestamp": "21/01/2025",
         "image": "img5.jpg"
     }
