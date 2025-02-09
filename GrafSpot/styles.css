@@ -6,6 +6,7 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 100vh;
+    align-content: center;
 }
 
 .logo {
@@ -138,7 +139,7 @@ hr {
     }
 
     .menuBar {
-        width: 30%;
+        width: 29.85%;
         border-left: #ddd solid 1px;
         border-right: #ddd solid 1px;
         border-bottom: #ddd solid 1px;
@@ -150,6 +151,7 @@ hr {
     }
 
     .logoBar {
+        width: 99.5%;
         border-left: #ddd solid 1px;
         border-right: #ddd solid 1px;
         border-top: #ddd solid 1px;
