@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <img src="images/${post.image}" alt="Post image">
                 <div class="post-info">
                     <i class="fa-regular fa-heart fa-2xl heart-icon interaction"></i>
+                    <i class="fa-regular fa-comment fa-2xl interaction"></i>
                     <i class="fa-solid fa-link fa-2xl interaction"></i>
                     <i class="fa-solid fa-paper-plane fa-2xl interaction"></i>
                 </div>
