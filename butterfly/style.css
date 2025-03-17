@@ -1,0 +1,53 @@
+body {
+    font-family: 'Chalkboard SE', 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #40C983;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+section {
+    margin: 30px;
+    width: 50%;
+}
+
+.menuBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 75px;
+    background-color: #FE8EA4;
+    margin: 20px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 125%;
+}
+
+.menu {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    place-items: center;
+}
+
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .logo {
+        width: 100%;
+    }
+    
+    section {
+        width: 90%;
+    }
+}
