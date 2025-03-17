@@ -20,8 +20,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 75px;
+    width: 60%;
+    height: 60%;
     background-color: #FE8EA4;
     margin: 20px;
     text-decoration: none;
