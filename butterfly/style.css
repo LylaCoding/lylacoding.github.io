@@ -51,6 +51,45 @@ section {
     padding: 0 25% 0 25%;
 }
 
+.guidesBox {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    background-color: #FE8EA4;
+    margin: 10px; /* Reduced margin */
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: inherit;
+    font-size: 125%;
+    border: 5px solid #FFE566;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.guidesBox h1 {
+    margin: 0;
+}
+
+.guidesBox img {
+    width: 200px;
+    height: 200px;
+}
+
+.guides {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; /* Reduced gap */
+    place-items: center;
+    height: 60vh;
+    width: 50%;
+    padding: 0 25% 0 25%;
+}
+
 @media (max-width: 600px) {
 
     .logo {
@@ -76,4 +115,18 @@ section {
         width: 100%;
         font-size: 85%;
     }
+
+    .guides {
+        height: 30vh;
+        gap: 10px;
+        padding: 10% 0 10% 0;
+        width: 100%;
+        font-size: 85%;
+        grid-template-columns: 1fr;
+    }
+
+    .guidesBox img {
+        width: 50vp;
+    }
+    
 }

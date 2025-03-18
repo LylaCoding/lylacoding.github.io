@@ -4,4 +4,27 @@
 #1360F0
 
 
-Butterfly DIY is a harm reduction project based in portsmouth that aims to provide information and resources for those who are doing DIY HRT
+Blood tests
+Safely Injecting
+Deciding what's right for you
+Crypto & Purchasing
+
+
+    <section class="guides">
+        <a class="guideSelBox">
+            <img src="bloods.png"></img>
+            <h1>Bloods</h1>
+        </a>
+        <a class="guideSelBox">
+            <img src="bloods.png"></img>
+            <h1>Bloods</h1>
+        </a>
+        <a class="guideSelBox">
+            <img src="bloods.png"></img>
+            <h1>Bloods</h1>
+        </a>
+        <a class="guideSelBox">
+            <img src="bloods.png"></img>
+            <h1>Bloods</h1>
+        </a>
+    </section>
