@@ -17,7 +17,6 @@ body {
 
 section {
     margin: 30px auto;
-    width: 50%;
 }
 
 .menuBox {
@@ -52,14 +51,13 @@ section {
 }
 
 .guidesBox {
-    margin: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 110%;
     height: 80%;
     background-color: #FE8EA4;
-    margin: 10px; /* Reduced margin */
+    margin: 20px; /* Reduced margin */
     text-decoration: underline;
     text-underline-offset: 3px;
     color: inherit;
@@ -83,11 +81,11 @@ section {
 .guides {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px; /* Reduced gap */
+    gap: 90px;
+    row-gap: 0px;
     place-items: center;
     height: 60vh;
     width: 50%;
-    padding: 0 25% 0 25%;
 }
 
 @media (max-width: 600px) {
@@ -119,7 +117,7 @@ section {
     .guides {
         height: 30vh;
         gap: 10px;
-        padding: 10% 0 10% 0;
+        margin: 15px 0 50px 0;
         width: 100%;
         font-size: 85%;
         grid-template-columns: 1fr;
@@ -127,6 +125,12 @@ section {
 
     .guidesBox img {
         width: 50vp;
+    }
+
+    .guidesBox {
+        margin: 0 50px 0 50px;
+        width: 75%;
+        height: 85%;
     }
     
 }
