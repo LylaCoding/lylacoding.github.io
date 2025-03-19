@@ -1,10 +1,10 @@
-body {
-    flex-direction: row;
-}
+        body {
+            flex-direction: row;
+        }
 
-@media (max-width: 600px) {
-    body {
-        flex-direction: column;
+        @media (max-width: 600px) {
+            body {
+                flex-direction: column;
 
-    }
-}
+            }
+        }
